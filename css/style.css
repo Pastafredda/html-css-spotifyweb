@@ -10,7 +10,7 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Parte principale */
+/* fine regole generali */
 
 #upper{
     height: calc(100vh - 80px);
@@ -30,6 +30,7 @@ main{
 }
 
 .button{
+    display: inline-block;
     color: white;
     text-decoration: none;
     border: 1px solid white;
@@ -49,6 +50,7 @@ main{
     font-weight: bold;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .spotify{
@@ -70,7 +72,7 @@ main{
    height: 100%;
 }
 
-.main-nav li{
+.nav li{
     height: 18px;
     margin: 10px 0;
     font-size: 12px;
@@ -80,7 +82,7 @@ main{
     align-items: center;
 }
 
-.main-nav li:first-child{
+.nav li:first-child{
     color: white;
 }
 
@@ -91,53 +93,59 @@ li img{
 
 h5{
     color: white;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .nav-playlist{
+    flex-grow: 1;
     overflow: auto;
+}
+
+.nav-playlist li:first-child{
+   display: flex;
+   align-items: center;
 }
 
 .nav-playlist li{
     color: #636363;
     list-style-type: none;
-    margin-top: 14px;
+    margin: 16px 0;
     font-size: 12px;
-}
-
-.crea-playlist{
-    color: #636363;
-    display: flex;
-    align-items: center;
-    margin: 5px 0;
-}
-
-.crea-playlist span{
-    padding-left: 10px;
 }
 
 .fa-square-plus{
     font-size: 32px;
     color: #a3a3a3;
+    padding-right: 5px;
 }
 
 .end-nav{
-    justify-content: end;
     color: #a3a3a3;
     font-size: 12px;
-    justify-self:end;
-    padding-right: 16px;
-    margin-bottom: 10px;
+}
+
+.fa-circle-down{
+    margin-left: 5px;
+
+}
+
+.end-nav span{
+    margin-left: 10px;
 }
 
 hr{
+    margin-top: 10px;
     margin-right: 16px;
 }
 
 .profile{
     color: #a3a3a3;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.profile span{
+    color: white;
 }
 
 .fa-user{
@@ -148,6 +156,36 @@ hr{
     background-color: #636363;
     color: white;
 }
+
+/* inizio parte principale */
+
+.categorie{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    color: #636363;
+}
+
+.categorie li{
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.container{
+    margin: 20px;
+}
+
+.container h3{
+    color: white;
+    margin: 10px 0;
+}
+
+
+
+/* Parte finale */
 
 footer{
     height: 80px;
