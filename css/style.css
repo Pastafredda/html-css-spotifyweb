@@ -17,17 +17,16 @@ body{
     display: flex;
 }
 
-
-
 main{
     height: 100%;
     width: calc(100% - 200px);
     background-color: #141922;
+    overflow: auto;
 }
 
 .header{
     text-align: end;
-    padding: 30px;
+    padding: 20px;
     background-color: rgba(0, 0, 0, 0.5)
 }
 
@@ -61,6 +60,7 @@ main{
     margin-bottom: 20px;
     display: flex;
     align-items: center;
+    margin-top: 10px;
 }
 
 .spotify span{
@@ -109,10 +109,14 @@ h5{
 }
 
 .nav-playlist li{
-    color: #636363;
     list-style-type: none;
     margin: 16px 0;
     font-size: 12px;
+}
+
+.side a{
+    color: #636363;
+    text-decoration: none;
 }
 
 .fa-square-plus{
@@ -126,7 +130,7 @@ h5{
     font-size: 12px;
 }
 
-.end-nav span{
+.end-nav a{
     margin-left: 10px;
 }
 
@@ -154,11 +158,11 @@ hr{
     color: white;
 }
 
-/* Sezione smartphone (552px) */
+/* Sezione xs (552px) */
 
 @media screen and (max-width:552px){
 
-    .nav-playlist, h5, .side span, hr{
+    .nav-playlist, h5, .side a, .side span, hr{
         display: none;
     }
 
@@ -180,49 +184,82 @@ hr{
         width: calc(100% - 50px);
     }
 
-
 }
 
-/* inizio parte principale */
+/* inizio parte degli album */
+
+.nav-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.nav-header li{
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.nav-header a{
+    text-decoration: none;
+    color: #636363;
+}
 
 .container{
     width: 98%;
     margin: auto;
 }
 
-.container h2{
+.container h2{  
+    margin-bottom: 20px;
     color: white;
-    margin: 20px 0;
-}
-
-.categorie{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 20px;
-    color: #636363;
-}
-
-.categorie li{
-    list-style-type: none;
-    font-weight: bold;
-    font-size: 14px;
 }
 
 .main-flex{
     display: flex;
-    flex-wrap: wrap;
     gap: 20px;
 }
 
-.col{
-    height: 200px;
+.square{
+    width: calc(100% / 6 - 20px);
+    text-align: center;
 }
 
-.col img{
-    max-height: 100%;
+.square h4{
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
+
+.square h6{
+    color: #636363;
+}
+
+.square img{
+    max-width:100%;
+}
+
+.row{
+    margin-top: 40px;
+    
+}
+
+.row h2{
+    margin-bottom: 10px;
+}
+
+.row h6{
+    color: #636363;
+    margin-bottom: 20px;
+}
+
+.artist img{
+    border-radius: 50%;
+}
+
+/* sezione mid 878px */
 
 /* Parte finale */
 
@@ -230,6 +267,5 @@ footer{
     height: 80px;
     background-color: aquamarine;
 }
-
 
 
