@@ -17,6 +17,8 @@ body{
     display: flex;
 }
 
+
+
 main{
     height: 100%;
     width: calc(100% - 200px);
@@ -47,6 +49,7 @@ main{
     height: 100%;
     background-color: black;
     padding-left: 16px;
+    padding-top: 10px;
     font-weight: bold;
     display: flex;
     flex-direction: column;
@@ -55,7 +58,6 @@ main{
 
 .spotify{
     height: 34px;
-    margin: 12px 20px;
     margin-bottom: 20px;
     display: flex;
     align-items: center;
@@ -93,7 +95,7 @@ li img{
 
 h5{
     color: white;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .nav-playlist{
@@ -124,11 +126,6 @@ h5{
     font-size: 12px;
 }
 
-.fa-circle-down{
-    margin-left: 5px;
-
-}
-
 .end-nav span{
     margin-left: 10px;
 }
@@ -157,7 +154,46 @@ hr{
     color: white;
 }
 
+/* Sezione smartphone (552px) */
+
+@media screen and (max-width:552px){
+
+    .nav-playlist, h5, .side span, hr{
+        display: none;
+    }
+
+    .side{
+        width: 50px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .nav li, .spotify{
+        height: auto;
+    }
+
+    .nav img{
+        margin: 0;
+    }
+
+    main{
+        width: calc(100% - 50px);
+    }
+
+
+}
+
 /* inizio parte principale */
+
+.container{
+    width: 98%;
+    margin: auto;
+}
+
+.container h2{
+    color: white;
+    margin: 20px 0;
+}
 
 .categorie{
     display: flex;
@@ -171,19 +207,22 @@ hr{
 .categorie li{
     list-style-type: none;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 14px;
 }
 
-.container{
-    margin: 20px;
+.main-flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.container h3{
-    color: white;
-    margin: 10px 0;
+.col{
+    height: 200px;
 }
 
-
+.col img{
+    max-height: 100%;
+}
 
 /* Parte finale */
 
