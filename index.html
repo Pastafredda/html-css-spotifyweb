@@ -14,7 +14,11 @@
 <body>
 
     <div id="upper">
+
+        <!-- parte di navigazione playlist -->
         <div class="side"> 
+
+            <!-- logo con parte di navigazione -->
             <div class="main-nav">
                 <div class="spotify">
                     <img src="img/logo-small.svg" alt="">
@@ -26,6 +30,8 @@
                     <li><img src="img/libreria.svg" alt="icona libreria"><a href="#">La tua libreria</a></li>
                 </ul>
             </div>  
+
+            <!-- Inizio creazione playlist e playlist aggiunte -->
             <h5>PLAYLIST</h5>
             <ul class="nav-playlist">
                 <li><i class="fa-solid fa-square-plus"></i><a href="#">Crea Playlist</a></li>
@@ -37,7 +43,8 @@
                 <li><a href="#">Nome Playlist</a></li>
                 <li><a href="#">Nome Playlist</a></li>
             </ul>
-            
+
+            <!-- Parte finale con profilo -->
             <div class="end-nav">
                 <i class="fa-regular fa-circle-down"></i>
                 <a href="#">Installa app</a>
@@ -49,12 +56,15 @@
             </div>        
         </div>
 
+        <!-- Parte principale con header in trasparenza -->
         <main>
             <div class="header">
                 <a class="button" href="#">EFFETTUA L'UPGRADE</a>
             </div>
 
             <div class="container">
+
+                <!-- Navigazione categorie musicali -->
                 <ul class="nav-header">
                     <li><a href="#">IN EVIDENZA</a></li>
                     <li><a href="#">PODCAST</a></li>
@@ -64,6 +74,7 @@
                     <li><a href="#">SCOPRI</a></li>
                 </ul>
 
+                <!-- Inizio parte principale con album -->
                 <h2>Recently Played</h2>
                 <div class="main-flex">
                     <div class="square">
@@ -80,7 +91,7 @@
 
                     <div class="square">
                         <img src="img/aquietplace.jpeg" alt="copertina">
-                        <h4>A qiet Place</h4>
+                        <h4>A Quiet Place</h4>
                         <h6>Subtitle</h6>      
                     </div>
 
@@ -135,14 +146,55 @@
                     </div>
                 </div>
             </div>
-            
         </main>
     </div>
      
    
 
-
+    <!-- Parte del player -->
     <footer>
+        <div class="flex-player">
+            <div class="sinistra">
+                <img src="img/sinister.jpeg" alt="copertina">
+                <div class="titolo-player">
+                    <h5>Sinister</h5>
+                    <h6>Brano Nome</h6>
+                </div>
+                <div class="icon">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-folder"></i>
+                </div>
+            </div>
+
+            <div class="centro">
+                <div class="player-icon">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+                <div class="player-flex">
+                    <div id="start">0:25</div>
+                    <div class="player">
+                        <div class="inside-player"></div>
+                    </div>
+                    <div id="end">04:35</div>
+                </div>
+                
+            </div>
+
+            <div class="destra">
+                <div class="icon-volume">
+                    <i class="fa-solid fa-list-ul"></i>
+                    <i class="fa-solid fa-tv"></i>
+                    <i class="fa-solid fa-volume-low"></i>
+                </div>
+                <div class="volume">
+                    <div class="inside-volume"></div>
+                </div>
+            </div>
+        </div>
 
     </footer>
     
