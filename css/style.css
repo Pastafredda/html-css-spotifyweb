@@ -219,6 +219,7 @@ hr{
 
 .main-flex{
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -260,6 +261,21 @@ hr{
 }
 
 /* sezione mid 878px */
+
+@media screen and (max-width:878px){
+   .square{
+    width: calc(100% / 4 - 20px);
+   }
+ 
+}
+
+/* sezione s 639px */
+
+@media screen and (max-width:639px){
+    .square{
+        width: calc(100% / 2 - 20px);
+       }
+}
 
 /* Parte finale */
 
