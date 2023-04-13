@@ -43,6 +43,12 @@ main{
     font-weight: bold;
 }
 
+.button:hover{
+    transition: all 0.5s ease;
+    transform: scale(1.08);
+}
+
+
 /* Navigazione playlist  */
 
 .side{
@@ -77,7 +83,7 @@ main{
 }
 
 .nav li{
-    height: 18px;
+    height: 22px;
     margin: 10px 0;
     font-size: 12px;
     color: #636363;
@@ -86,14 +92,20 @@ main{
     align-items: center;
 }
 
+li a:hover{
+    color: white;
+}
+
 .nav li:first-child{
     color: white;
+    
 }
 
 li img{
     max-height: 100%;
     margin-right: 5px;
 }
+
 
 h5{
     color: white;
@@ -108,6 +120,18 @@ h5{
 .nav-playlist li:first-child{
    display: flex;
    align-items: center;
+}
+
+.nav-playlist li:hover{
+    color: white;
+}
+
+i:hover{
+    color: white;
+}
+
+i{
+    cursor: pointer;
 }
 
 .nav-playlist li{
@@ -235,6 +259,29 @@ hr{
     text-align: center;
 }
 
+.overlay{
+    position: relative;
+}
+
+.icon-play{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    cursor: pointer;
+    color:#636363;
+}
+
+.icon-play:hover{
+    opacity: 1;
+}
+
 .square h4{
     color: white;
     margin-top: 10px;
@@ -266,6 +313,8 @@ hr{
 .artist img{
     border-radius: 50%;
 }
+
+
 
 /* sezione mid 878px */
 
@@ -314,6 +363,15 @@ footer{
 .titolo-player{
     margin-left: 10px;
     width: 120px;
+}
+
+.titolo-player h6{
+    width: 80px;
+}
+
+.titolo-player h6:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .titolo-player h6{
