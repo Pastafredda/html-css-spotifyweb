@@ -164,7 +164,7 @@ hr{
 
 @media screen and (max-width:552px){
 
-    .nav-playlist, h5, .side a, .side span, hr{
+    .nav-playlist, .side h5, .side a, .side span, hr{
         display: none;
     }
 
@@ -296,14 +296,15 @@ footer{
     align-items: center;
     justify-content: space-between;
     height: 100%;
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 .sinistra{
     height: 50px;
-    width: 250px;
     display: flex;
     align-items: center;
+    width: calc(100% / 3);
+
 }
 
 .sinistra img{
@@ -331,6 +332,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: calc(100% / 3);
 }
 
 .player-icon{
@@ -350,21 +352,21 @@ footer{
 .player-flex{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    width: 100%;
 }
 
 .player{
-    width: 480px;
+    width: 440px;
     height: 4px;
     background-color:#636363;
     border-radius: 30px;
+    
 }
 
 #start{
     color: white;
     font-size: 0.7rem ;
     margin-right: 12px;
-
 }
 
 #end{
@@ -374,7 +376,7 @@ footer{
 }
 
 .inside-player{
-    width: 120px;
+    width: calc(100% /3);
     border-radius: 30px;
     height: 4px;
     background-color:#a3a3a3;
@@ -384,7 +386,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 250px;
+    width: calc(100% / 3);
 
 }
 
@@ -392,12 +394,12 @@ footer{
     color: white;
     font-size: 0.8rem;
     display: flex;
-    gap: 15px;
-    margin-right: 15px;
+    gap: 10px;
+    margin-right: 10px;
 }
 
 .volume{
-    width: 120px;
+    width: 100px;
     height: 4px;
     background-color:#636363;
     border-radius: 30px;
@@ -405,7 +407,7 @@ footer{
 }
 
 .inside-volume{
-    width: 30px;
+    width: calc(100%/4);
     border-radius: 30px;
     height: 4px;
     background-color:#a3a3a3;
